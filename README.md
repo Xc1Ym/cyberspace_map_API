@@ -6,6 +6,7 @@
 使用Fofa、shodan、zoomeye三个网络空间测绘的API进行红队信息收集
 
 **所有API都为官方API，需要使用API KEY**
+
 ## 配置
 
 1. 打开`config.json`配置相应的API KEY
@@ -14,6 +15,8 @@
 ## Fofa
 
 **该工具使用Fofa官方API查询，需要普通会员或高级会员**
+
+**注🔴该代码来源于<https://github.com/Xc1Ym/FofaAPI>，正在修改以适配当前代码**
 
 ### 用法
 

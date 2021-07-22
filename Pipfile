@@ -11,6 +11,8 @@ prettytable = "==2.1.0"
 requests = "==2.26.0"
 urllib3 = "==1.26.6"
 wcwidth = "==0.2.5"
+zoomeye = "*"
+shodan = "*"
 
 [dev-packages]
 

@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-# author: Xc1Ym
-# github: https://github.com/Xc1Ym/FofaAPI
-# If you have any problems, please give feedback to https://github.com/Xc1Ym/FofaAPI/issues
 import requests
 import json
-import argparse
 import base64
 from prettytable import PrettyTable
 
@@ -15,9 +11,6 @@ from prettytable import PrettyTable
 
 请输入API身份认证参数，email为登录邮箱，key为个人资料中的API key
 '''
-
-email = ""
-key = ""
 
 class fofa:
 
@@ -80,39 +73,6 @@ class fofa:
             for i in range(len_size):
                 table.add_row([i + 1, r_list[i][0], r_list[i][1], r_list[i][2]])
         print(table)
-
-    # 版权信息
-    def Copyright(self):
-        bn = """
-                 ______     __               _____ _____ 
-                |  ____|   / _|        /\   |  __ \_   _|
-                | |__ ___ | |_ __ _   /  \  | |__) || |  
-                |  __/ _ \|  _/ _` | / /\ \ |  ___/ | |  
-                | | | (_) | || (_| |/ ____ \| |    _| |_ 
-                |_|  \___/|_| \__,_/_/    \_\_|   |_____|  
-            --------------------------------------------- 
-            author: Xc1Ym
-            github: https://github.com/Xc1Ym/FofaAPI
-            """
-        print(bn)
-        self.Terminal()
-
-    # 命令行模块
-    def Terminal(self):
-        parser = argparse.ArgumentParser(description="e.g：python fofa_api.py --search IP or domain\t python fofa_api.py --search \"domain=xx.com\" or \"city=Beijing\"", prog="fofa_api.py")
-        group = parser.add_mutually_exclusive_group()
-        group.add_argument("--version", "-V", help="Show version of Fofa_API", action='version', version="| %(prog)s v1.2 |")
-        group.add_argument("--search", "-S", help="Search key word", type=str)
-        group.add_argument("--rule", help="Query fofa syntax rules", action="store_true")
-        parser.add_argument("--size", help="Show the number of results.(default=100)", default=100)
-        parser.add_argument("--page", help="Show the page of results.(default=1)", default=1)
-        # parser.add_argument('word_search', help="search key word")
-        args = parser.parse_args()
-        if args.search:
-            self.Get_search(email, key, args.search, args.size, args.page)
-        else:
-            if args.rule:
-                self.Rule()
 
     # 高级查询语句模块
     @staticmethod
