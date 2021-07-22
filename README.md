@@ -1,6 +1,6 @@
 # Cyberspace Map API
 
-![](https://img.shields.io/badge/python-v3.9-blue)
+![](https://img.shields.io/github/pipenv/locked/python-version/Xc1Ym/cyberspace_map_API)
 ![](https://img.shields.io/github/license/Xc1Ym/cyberspace_map_API)
 
 使用Fofa、shodan、zoomeye三个网络空间测绘的API进行红队信息收集
