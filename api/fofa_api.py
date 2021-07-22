@@ -16,14 +16,9 @@ class fofa:
 
     # 获取基础信息
     @staticmethod
-    def Get_me(email_get_api, key_get_api):
+    def Get_information(email_get_api, key_get_api):
         api = "https://fofa.so/api/v1/info/my?email={}&key={}".format(email_get_api, key_get_api)
-        r_json = json.loads(requests.get(api).text)
-        return r_json
-
-    # 格式化基础信息
-    @staticmethod
-    def Get_information(r):
+        r = json.loads(requests.get(api).text)
         print("当前用户昵称：" + r['username'])
         print("当前用户头像：" + r['avatar'])
         print("当前用户邮箱：" + r['email'])
@@ -34,25 +29,24 @@ class fofa:
         # 请求FofaAPI
         qbase64 = base64.b64encode(search.encode())
         api = "https://fofa.so/api/v1/search/all?email={}&key={}&qbase64={}&page={}&size={}".format(email_get_api, key_get_api, qbase64.decode(), page, size)
-        r = requests.get(api)
-        r_json = json.loads(r.text)
-        # print(r_json) # 服务端原生错误信息
+        r_json = requests.get(api)
+        r = json.loads(r_json.text)
         # 判断错误信息
-        if r_json['error']:
-            if r_json['errmsg'] == "Internal Server Error!":
+        if r['error']:
+            if r['errmsg'] == "Internal Server Error!":
                 print("服务器错误")
-            elif r_json['errmsg'] == "FOFA coin is not enough!":
+            elif r['errmsg'] == "FOFA coin is not enough!":
                 print("Fofa币不足")
-            elif r_json['errmsg'] == "Result window is too large, page must be less than or equal to...!":
+            elif r['errmsg'] == "Result window is too large, page must be less than or equal to...!":
                 print("结果窗口过大")
-            elif r_json['errmsg'] == "limits must less than 10001":
+            elif r['errmsg'] == "limits must less than 10001":
                 print("超过API限制")
-            elif r_json['errmsg'] == "401 Unauthorized, make sure email and apikey is correct.":
+            elif r['errmsg'] == "401 Unauthorized, make sure email and apikey is correct.":
                 print("鉴权失败，请重新确认邮箱和API KEY")
-            elif r_json['errmsg'] == '820103':
+            elif r['errmsg'] == '820103':
                 print("格式错误，请重新输入")
         else:
-            self.Print_search(r_json, size)
+            self.Print_search(r, size)
 
     # 格式化输出
     @staticmethod

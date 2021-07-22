@@ -19,10 +19,10 @@ def Terminal():
         return args.search, args.size, args.page
     else:
         if args.rule:
-            return args.rule, 1, 0
+            return args.rule, -1, -2
         else:
             if args.information:
-                return args.information, 0, 1
+                return args.information, -2, -1
             else:
                 print("\nusage: main.py -h, --help          show help message and exit")
                 return 0, 0, 0
