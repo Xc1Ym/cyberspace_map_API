@@ -1,0 +1,14 @@
+{
+    "fofa":
+    {
+        "fofa_email": "","fofa_key": ""
+    },
+    "zoomeye":
+    {
+        "zoomeye_api_key": ""
+    },
+    "shodan":
+    {
+        "shodan_key": ""
+    }
+}
