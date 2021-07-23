@@ -3,7 +3,7 @@ import argparse
 # 命令行模块
 def Terminal():
     parser = argparse.ArgumentParser(
-        description="e.g：python fofa_api.py --search IP or domain\t python fofa_api.py --search \"domain=xx.com\" or \"city=Beijing\"",
+        description="e.g：python cyberspace.py --search IP or domain\t python cyberspace.py --search \"domain=xx.com\" or \"city=Beijing\"",
         prog="fofa_api.py")
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--version", "-V", help="Show version of Fofa_API", action='version',
@@ -24,5 +24,5 @@ def Terminal():
             if args.information:
                 return args.information, -2, -1
             else:
-                print("\nusage: main.py -h, --help          show help message and exit")
+                print("\nusage: cyberspace.py -h, --help          show help message and exit")
                 return 0, 0, 0
