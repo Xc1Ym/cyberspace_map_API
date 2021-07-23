@@ -41,9 +41,9 @@
 
 ### 截图
 
-![](./image/search.png)
+暂无
 
-![](./image/rule.png)
+
 
 ## Shodan
 开发中
