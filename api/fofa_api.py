@@ -12,7 +12,7 @@ from prettytable import PrettyTable
 请输入API身份认证参数，email为登录邮箱，key为个人资料中的API key
 '''
 
-class fofa:
+class Fofa:
 
     # 获取基础信息
     @staticmethod

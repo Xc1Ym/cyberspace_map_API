@@ -7,4 +7,5 @@ def config():
         fofa_key = json_api['fofa_key']
         zoomeye_key = json_api['zoomeye_key']
         shodan_key = json_api['shodan_key']
-        return fofa_email, fofa_key, zoomeye_key, shodan_key
+        quake_key = json_api['quake_key']
+        return fofa_email, fofa_key, zoomeye_key, shodan_key, quake_key

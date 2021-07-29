@@ -5,6 +5,7 @@ class Re:
     def regular(search):
         re_ip = re.compile('((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}')# 匹配IP
         re_domain = re.compile('[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?')# 匹配域名
+        # re_app =
 
         search_domain = re_domain.search(search)
         if not search_domain is None:
