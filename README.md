@@ -26,9 +26,9 @@ Use [Fofa](https://fofa.so)、[shodan](https://www.shodan.io)、[zoomeye](https:
 
 **All APIs are official, you need to use API KEY**
 
-## 配置
+## How to use?
 
-1. open`config.json`to input API KEY
+1. open`setting/config.json`to input API KEY
 2. `pip install -r requirements.txt`安装依赖包
 3. Enter `pip install -r requirements.txt` at the terminal to install python package
 
