@@ -2,13 +2,15 @@
 
 ![](https://img.shields.io/github/pipenv/locked/python-version/Xc1Ym/cyberspace_map_API)
 ![](https://img.shields.io/github/license/Xc1Ym/cyberspace_map_API)
+![](https://img.shields.io/github/stars/xc1ym/cyberspace_map_API?style=plastic)
 
 
 ## 开发进度
-1. zoomeyeAPI未完成
-2. shodanAPI未完成
-3. 正则匹配未完成
-4. 360 quakeAPI未完成
+1. fofaAPI已完成
+2. zoomeyeAPI未完成
+3. shodanAPI未完成
+4. 正则匹配未完成
+5. 360 quakeAPI已完成
 
 ### 目前遇到的困难
 1. 输入无法对接各API
@@ -30,7 +32,9 @@
 
 **该工具使用Fofa官方API查询，需要普通会员或高级会员**
 
-**注🔴该代码来源于<https://github.com/Xc1Ym/FofaAPI>，正在修改以适配当前代码**
+~~注🔴该代码来源于<https://github.com/Xc1Ym/FofaAPI>，正在修改以适配当前代码~~
+
+**已完成适配**
 
 ### 用法
 
@@ -52,7 +56,7 @@
 开发中
 
 ## 360 quake
-开发中
+开发完成
 
 ## 开发者
 [Xc1YM](https://github.com/Xc1Ym)
