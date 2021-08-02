@@ -23,7 +23,7 @@ if __name__ == '__main__':
         fofa_api.fofa().Get_search(fofa_email, fofa_key, search, szie, page)
         '''
     # Zoom_eye.zoomeye_key(zoomeye_key, search)
-    quake_api.Quake_360.search(quake_key, search, size, page)
+    quake_api.Quake_360.Search(quake_key, search, size, page)
     # 三个任选
     #fofa_api.fofa().Terminal(fofa_email,fofa_key) # 调用Fofa API
     #shodan_api # 调用shodan API
