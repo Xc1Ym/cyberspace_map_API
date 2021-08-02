@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/pipenv/locked/python-version/Xc1Ym/cyberspace_map_API)
 ![](https://img.shields.io/github/license/Xc1Ym/cyberspace_map_API)
-![](https://img.shields.io/github/stars/xc1ym/cyberspace_map_API?style=plastic)
+![](https://img.shields.io/github/stars/xc1ym/cyberspace_map_API)
 
 
 ## 开发进度
