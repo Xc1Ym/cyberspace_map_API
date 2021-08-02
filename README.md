@@ -11,7 +11,7 @@
 1. ~~fofaAPI~~ ***Completed***
 2. zoomeyeAPI
 3. shodanAPI
-4. 正则匹配
+4. regular
 5. ~~360 quakeAPI~~ ***Completed***
 
 ### Difficulty
@@ -29,8 +29,7 @@ Use [Fofa](https://fofa.so)、[shodan](https://www.shodan.io)、[zoomeye](https:
 ## How to use?
 
 1. open`setting/config.json`to input API KEY
-2. `pip install -r requirements.txt`安装依赖包
-3. Enter `pip install -r requirements.txt` at the terminal to install python package
+2. Enter `pip install -r requirements.txt` at the terminal to install python package
 
 ## Fofa
 
