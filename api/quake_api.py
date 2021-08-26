@@ -20,7 +20,7 @@ class Quake_360:
         self.Print_search(r_json, search)
 
     def Print_search(self, r_json, search):
-        print("\n")
+        print("\n360Quake结果\n")
         print("页码：第{}页  共{}页  总数量：{}个".format(r_json['meta']['pagination']['page_index'],
                                               r_json['meta']['pagination']['page_size'],
                                               r_json['meta']['pagination']['total']))

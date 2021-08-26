@@ -51,7 +51,7 @@ class Fofa:
     # 格式化输出
     @staticmethod
     def Print_search(r_json, size):
-        print("\n")
+        print("\nFofa结果\n")
         print("页码：第{}页  数量：{}个".format(r_json['page'], r_json['size']))
         print("当前显示：{}个".format(size))
         print("查询内容：{}\n".format(r_json['query']))
